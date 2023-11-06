@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./files/normalize.css">
+    <link rel="stylesheet" href="./files/styles.css">
+  </head>
+  <body>
+    <div id="app">
+      <section class="description-section">
+        <section class="title">{{ title }}</section>
+        <section class="description" v-html="description.replaceAll('\n', '<br>')"></section>
+      </section>
+      <section class="messages-section">
+        <section class="messages">
+          <Message
+            v-for="message in messages"
+            :key="message.id"
+            :message="message"
+          />
+        </section>
+      </section>
+    </div>
+  </body>
+  <script src="./data.js"></script>
+  <script src="./files/vue.js"></script>
+  <script src="./files/script.js"></script>
+</html>
+
+<!--
+  Material Design | Apache-2.0 & MIT | github.com/Templarian/MaterialDesign/blob/master/LICENSE
+-->
