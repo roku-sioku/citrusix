@@ -1,3 +1,15 @@
 
-let pic = document.getElementById(".pic");
-let src = pic.getAttribute("src");
+let img = document.getElementsByTagName('img');
+for (let i=0; i<img.length;i++){
+    img[i].addEventListener('click',function(){
+        let src = img[i].getAttribute('src');
+        navigator.clipboard.writeText(src).then(
+            () => {
+                alert("URLをコピーしました。");
+            },
+            () => {
+                alert("うまくいきませんでした。");
+            },
+        );
+    });
+};
