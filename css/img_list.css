@@ -1,0 +1,30 @@
+
+main{
+    padding: 20px;
+}
+.wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    background-color: #eee;
+}
+
+.grid{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 200px);}
+
+.item{
+    padding: 10px 25px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.item img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
