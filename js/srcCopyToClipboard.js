@@ -7,7 +7,6 @@ for (let i=0; i<img.length;i++){
         navigator.clipboard.writeText(URL).then(
             () => {
                 toast.style.visibility = "visible";
-                toast.style.transition = "all 0.3s";
                 setTimeout(function(){
                     toast.style.visibility = "hidden";
                 }, 2000);
