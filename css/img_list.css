@@ -24,9 +24,9 @@ main{
 }
 
 #toast > p{
-    padding: 8px 24px;
+    margin: 0 auto;
+    padding: 8px 8px;
     font-size: 12px;
-    vertical-align: center;
     color: #fff;
 }
 
