@@ -16,14 +16,15 @@ main{
     z-index: 10;
     top: 24px;
     left: calc(50% - 120px);
-    width: 240px;
+    width: 160px;
     height: 32px;
     background-color: rgba(22,22,22,0.7);
-    transition: all 0.3s;
+    border-radius: 4px;
+    transition: all 0.5s;
 }
 
 #toast > p{
-    padding: 12px 24px;
+    padding: 8px 24px;
     font-size: 12px;
     vertical-align: center;
     color: #fff;
