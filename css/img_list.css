@@ -15,7 +15,7 @@ main{
     position: absolute;
     z-index: 10;
     top: 24px;
-    left: calc(50% - 120px);
+    left: calc(50% - 80px);
     width: 160px;
     height: 32px;
     background-color: rgba(22,22,22,0.7);
