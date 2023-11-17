@@ -9,7 +9,7 @@ for (let i=0; i<img.length;i++){
                 toast.style.visibility = "visible";
                 setTimeout(function(){
                     toast.style.visibility = "hidden";
-                }, 3000);
+                }, 2000);
             },
             () => {
                 alert("うまくいきませんでした。");
