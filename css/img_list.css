@@ -20,7 +20,6 @@ main{
     height: 32px;
     background-color: rgba(22,22,22,0.7);
     border-radius: 4px;
-    transition: all 0.5s;
 }
 
 #toast > p{
