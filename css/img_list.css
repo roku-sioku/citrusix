@@ -23,9 +23,9 @@ main{
 }
 
 #toast > p{
-    margin: 0 auto;
     padding: 8px 8px;
     font-size: 12px;
+    text-align: center;
     color: #fff;
 }
 
