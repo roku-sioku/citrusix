@@ -44,10 +44,11 @@ main{
     border-radius: 4px;
 }
 
-.item img{
+.item > img{
     display: inline-block;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
     vertical-align: bottom;
+    cursor: pointer;
 }
