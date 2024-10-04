@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>なんとか作成機（仮）</title>
+  </head>
+  <body>
+    <div class="contents">
+      <div class="resultImage">
+        <img class="hair hair-back base" id="back_base" src="img/hair_back1_base.png">
+        <img class="hair hair-back line" id="back_line" src="img/hair_back1_line.png">
+        <img class="earL skin base" id="earL_base" src="img/earL_base_human.png">
+        <img class="earL line" id="earL_line" src="img/earL_line_human.png">
+        <img class="face skin base" src="img/face_base.png">
+        <img class="face line" src="img/face_line.png">
+        <img class="face cheek face-masked" src="img/face_cheek.png">      
+        <img class="earR skin base" id="earR_base" src="img/earR_base_human.png">
+        <img class="earR line" id="earR_line" src="img/earR_line_human.png">
+        <img class="hair hair-front base" id="front_base" src="img/hair_front1_base.png">
+        <img class="hair hair-front line" id="front_line" src="img/hair_front1_line.png">
+        <img class="hair hair-left base" id="left_base" src="img/hair_left1_base.png">
+        <img class="hair hair-left line" id="left_line" src="img/hair_left1_line.png">
+        <img class="hair hair-right base" id="right_base" src="img/hair_right1_base.png">
+        <img class="hair hair-right line" id="right_line" src="img/hair_right1_line.png">
+        <img class="pupil base eyecolor1" src="img/pupil_base1.png">
+        <img class="pupil base eyecolor2" src="img/pupil_base2.png">
+        <img class="pupil shadow eye-masked" src="img/pupil_shadow.png">
+        <img class="pupil base pointcolor" src="img/pupil_pointcolor.png">
+        <img class="pupil screen eye-masked" src="img/pupil_screen.png">
+        <img class="pupil glow eyecolor1" src="img/pupil_glow1.png">
+        <img class="pupil glow eyecolor2" src="img/pupil_glow2.png">
+        <img class="highlight" id="highlight" src="img/pupil_highlight1.png">
+        <img class="eyelashes" id="eyelashes" src="img/eyelashes1_1.png">
+        <img class="eyebrows" src="img/eyebrows1.png">
+      </div>
+      <div class="tab">
+        <!-- <div class="tab-list">
+          <ul>
+            <li class="tab-list__item active">肌</li>
+            <li class="tab-list__item">耳</li>
+            <li class="tab-list__item">目</li>
+            <li class="tab-list__item">睫毛</li>
+            <li class="tab-list__item">前髪</li>
+            <li class="tab-list__item">横髪左</li>
+            <li class="tab-list__item">横髪右</li>
+            <li class="tab-list__item">後ろ髪</li>
+          </ul>
+        </div> -->
+        <div class="tab-contents">
+          <div class="tab-contents__item show">
+            <label>肌の色:<input type="color" id="skin-color"></label>
+          </div>
+          <div class="tab-contents__item">
+            <button id="ear_human">ヒト耳</button>
+            <button id="ear_elf">尖り耳</button>
+          </div>
+          <div class="tab-contents__item">
+            <label>瞳の色1:<input type="color" id="pupil-color1"></label>
+            <label>瞳の色2:<input type="color" id="pupil-color2"></label>
+            <label>瞳孔の色:<input type="color" id="pupil-pointcolor"></label>
+            <br>
+            <button id="btn_HL1">ハイライト1</button>
+            <button id="btn_HL2">ハイライト2</button>
+            <button id="btn_HL3">ハイライト3</button>
+            <button id="btn_HL4">ハイライト4</button>
+          </div>
+          <div class="tab-contents__item">
+            <button id="btn_EL1_1">ジト目</button>
+            <button id="btn_EL1_2">ジト目（下向き睫毛）</button>
+            <button id="btn_EL1_3">ジト目（上向き睫毛）</button><br>
+            <button id="btn_EL2_1">垂れ目</button>
+            <button id="btn_EL2_2">垂れ目（下向き睫毛）</button>
+            <button id="btn_EL2_3">垂れ目（上向き睫毛）</button><br>
+            <button id="btn_EL3_1">吊り目</button>
+            <button id="btn_EL3_2">吊り目（下向き睫毛）</button>
+            <button id="btn_EL3_3">吊り目（上向き睫毛）</button>
+          </div>
+          <div class="tab-contents__item">
+            <label>髪の色:<input type="color" id="hair-color"></label>
+          </div>
+          <div class="tab-contents__item">
+            <button id="btn_front1">前髪1</button>
+            <button id="btn_front2">前髪2</button>
+            <button id="btn_front3">前髪3</button>
+          </div>
+          <div class="tab-contents__item">
+            <button id="btn_left1">横髪左1</button>
+            <button id="btn_left2">横髪左2</button>
+          </div>
+          <div class="tab-contents__item">
+            <button id="btn_right1">横髪右1</button>
+            <button id="btn_right2">横髪右2</button>
+          </div>
+          <div class="tab-contents__item">
+            <button id="btn_back1">後ろ髪1</button>
+            <button id="btn_back2">後ろ髪2</button>
+            <button id="btn_back3">後ろ髪3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
