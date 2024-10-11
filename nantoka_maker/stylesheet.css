@@ -12,6 +12,7 @@
 
 .resultImage {
     width: 720px;
+    height: 720px;
     position: relative;
 }
 
@@ -131,10 +132,6 @@
 }
 
 @media screen and (max-width:720px){
-    .contents{
-        flex-direction: column;
-    }
-
     .resultImage{
         width: 100%;
     }
