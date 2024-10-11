@@ -137,6 +137,9 @@
 
     .resultImage{
         width: 100%;
+    }
 
+    .tab{
+        margin-top: 720px;
     }
 }
