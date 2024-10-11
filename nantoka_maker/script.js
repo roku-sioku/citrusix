@@ -25,7 +25,7 @@ for (let i=0; i<skinMask.length;i++){
           -webkit-mask-image:url('${src}');
           -webkit-mask-size: contain;
           -webkit-mask-repeat: no-repeat;
-          -webkit-mask-position:  center;"></div>`)
+          -webkit-mask-position:  top;"></div>`)
 }}
 AddSkinMask();
 
@@ -82,7 +82,7 @@ function AddPupilMask(){
             -webkit-mask-image:url('${src}');
             -webkit-mask-size: contain;
             -webkit-mask-repeat: no-repeat;
-            -webkit-mask-position:  center;"></div>`)
+            -webkit-mask-position: top;"></div>`)
   }}
   AddPupilMask();
 // 瞳の色を取得
@@ -147,7 +147,7 @@ function AddHairMask(){
               -webkit-mask-image:url('${src}');
               -webkit-mask-size: contain;
               -webkit-mask-repeat: no-repeat;
-              -webkit-mask-position:  center;"></div>`)
+              -webkit-mask-position: top;"></div>`)
     }else{
       hairMask[i].insertAdjacentHTML('afterend',
         `<div class="hair-mask mask" style=" z-index: ${i*5+15};
@@ -158,7 +158,7 @@ function AddHairMask(){
               -webkit-mask-image:url('${src}');
               -webkit-mask-size: contain;
               -webkit-mask-repeat: no-repeat;
-              -webkit-mask-position:  center;"></div>`)
+              -webkit-mask-position: top;"></div>`)
     }
 
   }}
