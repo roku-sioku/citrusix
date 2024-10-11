@@ -74,7 +74,7 @@ function AddPupilMask(){
   for (let i=0; i<pupilMask.length;i++){
     let src = pupilMask[i].src;
     pupilMask[i].insertAdjacentHTML('afterend',
-      `<div class="pupil-mask mask"z-index: 40;
+      `<div class="pupil-mask mask" style=" z-index: 40;
             mask-image:url('${src}');
             mask-size: contain;
             mask-repeat: no-repeat;
@@ -150,7 +150,7 @@ function AddHairMask(){
               -webkit-mask-position:  center;"></div>`)
     }else{
       hairMask[i].insertAdjacentHTML('afterend',
-        `<div class="hair-mask mask" style="z-index: ${i*5+15};
+        `<div class="hair-mask mask" style=" z-index: ${i*5+15};
               mask-image:url('${src}');
               mask-size: contain;
               mask-repeat: no-repeat;
