@@ -234,34 +234,14 @@ function showResult(){
   e2i.get_png(function (img_data) {
       let img_elem = document.createElement("img");
       img_elem.src = img_data;
-      document.getElementsByTagName("body")[0].appendChild(img_elem);
+      img_elem.id = "result-png";
+      if(document.getElementById("result-png")){
+        document.getElementById("result-png").src = img_data;
+      }else{
+        document.getElementsByTagName("body")[0].appendChild(img_elem);
+      }
 
           //表示と同時にダウンロードもさせる場合
-    Elem2Img.save_png(img_data, "Sample.png");
+    // Elem2Img.save_png(img_data, "Sample.png");
   }, elem);
-}
-
-// html2canvasで画像をダウンロード（マスクが効かなかった）
-// function html2canvasRun() {
-//   html2canvas(document.querySelector("#resultImage"),{backgroundColor: null}).then(canvas => {
-//      let link = document.createElement("a");
-//      link.href = canvas.toDataURL("image/png");
-//      link.download = "result.png";
-//      link.click();
-//  });
-// }
-
-// dom-to-imageを試す
-var node = document.getElementById('resultImage');
-
-function domToImage(){
-  domtoimage.toPng(node)
-  .then(function (dataUrl) {
-      var img = new Image();
-      img.src = dataUrl;
-      document.body.appendChild(img);
-  })
-  .catch(function (error) {
-      console.error('oops, something went wrong!', error);
-  });
 }
