@@ -11,8 +11,7 @@
 }
 
 .resultImage {
-    width: 50%;
-    min-width: 720px;
+    width: 720px;
     height: 720px;
     position: relative;
 }
@@ -130,4 +129,10 @@
 
 .hidden{
     display: none;
+}
+
+@media screen and (max-width:720px){
+    .resultImage{
+        width: 100%;
+    }
 }
