@@ -131,6 +131,10 @@
 }
 
 @media screen and (max-width:720px){
+    .contents{
+        flex-direction: column;
+    }
+
     .resultImage{
         width: 100%;
 
