@@ -17,7 +17,7 @@ let skinMask = document.getElementsByClassName('skin base');
 for (let i=0; i<skinMask.length;i++){
   let src = skinMask[i].src;
   skinMask[i].insertAdjacentHTML('afterend',
-    `<div class="mask" style="z-index: ${(i+1)*5}; 
+    `<div class="skin-mask mask" style="z-index: ${(i+1)*5}; 
           mask-image:url('${src}');
           mask-size: contain;
           mask-repeat: no-repeat;
@@ -74,7 +74,7 @@ function AddPupilMask(){
   for (let i=0; i<pupilMask.length;i++){
     let src = pupilMask[i].src;
     pupilMask[i].insertAdjacentHTML('afterend',
-      `<div class="mask"z-index: 40;
+      `<div class="pupil-mask mask"z-index: 40;
             mask-image:url('${src}');
             mask-size: contain;
             mask-repeat: no-repeat;
@@ -139,7 +139,7 @@ function AddHairMask(){
     // 後ろ髪だけz-index:0;
     if(i==0){
       hairMask[i].insertAdjacentHTML('afterend',
-        `<div class="mask" style=" z-index: 0;
+        `<div class="hair-mask mask" style=" z-index: 0;
               mask-image:url('${src}');
               mask-size: contain;
               mask-repeat: no-repeat;
@@ -150,7 +150,7 @@ function AddHairMask(){
               -webkit-mask-position:  center;"></div>`)
     }else{
       hairMask[i].insertAdjacentHTML('afterend',
-        `<div class="mask" style="z-index: ${i*5+15};
+        `<div class="hair-mask mask" style="z-index: ${i*5+15};
               mask-image:url('${src}');
               mask-size: contain;
               mask-repeat: no-repeat;
