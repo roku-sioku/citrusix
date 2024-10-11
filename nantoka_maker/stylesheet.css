@@ -132,11 +132,10 @@
 }
 
 @media screen and (max-width:720px){
+    .contents{
+        flex-direction: column;
+    }
     .resultImage{
         width: 100%;
-    }
-
-    .tab{
-        margin-top: 720px;
     }
 }
