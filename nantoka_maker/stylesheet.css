@@ -1,3 +1,10 @@
+body{
+    background-color: #fdffe9;
+    opacity: 0.5;
+    background-image:  linear-gradient(#86d4a3 1.9px, transparent 1.9px), linear-gradient(to right, #86d4a3 1.9px, #fdffe9 1.9px);
+    background-size: 38px 38px;
+}
+
 .contents{
     margin: 36px;
     display:flex;
