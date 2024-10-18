@@ -249,7 +249,7 @@ function showResult(){
 // タブメニューの実装
 'use strict';
 {
-  const tabMenus = document.querySelectorAll('tab-list__item');
+  const tabMenus = document.querySelectorAll('.tab-list__item');
   console.log(tabMenus);
 // イベント付加
   tabMenus.forEach((tabMenu) => {
