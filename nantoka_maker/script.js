@@ -245,3 +245,21 @@ function showResult(){
     // Elem2Img.save_png(img_data, "Sample.png");
   }, elem);
 }
+
+// タブメニューの実装
+'use strict';
+{
+  const tabMenus = document.querySelectorAll('tab-list__item');
+  console.log(tabMenus);
+// イベント付加
+  tabMenus.forEach((tabMenu) => {
+    tabMenu.addEventListener('click', tabSwitch);
+  })
+// イベントの処理
+  function tabSwitch(e){
+    // クリックされた要素のデータ属性を取得
+    const tabTargetData = e.currentTarget.dataset.tab;
+    console.log(e.currentTarget);
+    console.log(e.currentTarget.dataset.tab);
+  }
+}

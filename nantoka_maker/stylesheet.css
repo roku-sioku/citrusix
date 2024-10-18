@@ -118,15 +118,34 @@
 
 .tab-list > ul{
     display: flex;
+    justify-content: center;
+    min-height: 50%;
 }
 
 .tab-list__item{
     padding: 20px 10px 20px 10px;
+    border: #444 1pc solid;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.tab-list__item.active{
+    background-color: rgba(48, 172, 249);
+    color: aliceblue;
+    padding: 12px 5px;
 }
 
 .tab-contents{
     border: #444 1px solid;
     border-radius: 16px;
+}
+
+.tab-contents__item{
+    display: none;
+}
+
+.tab-contents__item.show{
+    display: block;
 }
 
 .resultShow > button{
@@ -149,5 +168,6 @@
     }
     .resultImage{
         width: 100%;
+        height: 50%;
     }
 }
