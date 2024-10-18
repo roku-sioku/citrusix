@@ -268,9 +268,9 @@ function showResult(){
 // イベントの処理
   function tabSwitch(e){
     // クリックされた要素のデータ属性を取得 データ属性ってdata-○○=""のやつのことか……
-    const tabTargetData = e.currentTarget.dataset.tab;
+    const tabTargetData = e.currentTarget.dataset.list;
     console.log(e.currentTarget); 
-    console.log(e.currentTarget.dataset.tab);
+    console.log(e.currentTarget.dataset.list);
     // クリックされた要素の親要素と、その子要素を取得
     const tabList = e.currentTarget.closest('.tab-list');
     console.log(tabList);
