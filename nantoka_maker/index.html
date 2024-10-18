@@ -48,16 +48,16 @@
         <div class="tab">
           <div class="tab-list">
             <ul>
-              <li class="tab-list__item active">肌の色と耳</li>              <li class="tab-list__item">目</li>
-              <li class="tab-list__item">睫毛</li>
-              <li class="tab-list__item">前髪</li>
-              <li class="tab-list__item">横髪左</li>
-              <li class="tab-list__item">横髪右</li>
-              <li class="tab-list__item">後ろ髪</li>
+              <li class="tab-list__item active" data-list="01">肌の色と耳</li>              <li class="tab-list__item">目</li>
+              <li class="tab-list__item" data-list="02">目と眉</li>
+              <li class="tab-list__item" data-list="03">髪色と前髪</li>
+              <li class="tab-list__item" data-list="04">横髪左</li>
+              <li class="tab-list__item" data-list="05">横髪右</li>
+              <li class="tab-list__item" data-list="06">後ろ髪</li>
             </ul>
           </div>
           <div class="tab-contents">
-            <div class="tab-contents__item show">
+            <div class="tab-contents__item show" data-contents="01">
               <label>肌の色:<input type="color" id="skin-color" value="#FFF5F1"></label>
               <br>
               <button id="ear_human">ヒト耳</button>
@@ -65,17 +65,7 @@
             </div>
 
             </div>
-            <div class="tab-contents__item">
-              <label>瞳の色1:<input type="color" id="pupil-color1" value="#61A6EE"></label>
-              <label>瞳の色2:<input type="color" id="pupil-color2" value="#FAE893"></label>
-              <label>瞳孔の色:<input type="color" id="pupil-pointcolor" value="#F6C2CF"></label>
-              <br>
-              <button id="btn_HL1">ハイライト1</button>
-              <button id="btn_HL2">ハイライト2</button>
-              <button id="btn_HL3">ハイライト3</button>
-              <button id="btn_HL4">ハイライト4</button>
-            </div>
-            <div class="tab-contents__item">
+            <div class="tab-contents__item" data-contents="02">
               <button id="btn_EL1_1">ジト目</button>
               <button id="btn_EL1_2">ジト目（下向き睫毛）</button>
               <button id="btn_EL1_3">ジト目（上向き睫毛）</button><br>
@@ -85,34 +75,51 @@
               <button id="btn_EL3_1">吊り目</button>
               <button id="btn_EL3_2">吊り目（下向き睫毛）</button>
               <button id="btn_EL3_3">吊り目（上向き睫毛）</button>
-            </div>
-            <div class="tab-contents__item">
+              <br>
+              <label>瞳の色1:<input type="color" id="pupil-color1" value="#61A6EE"></label>
+              <label>瞳の色2:<input type="color" id="pupil-color2" value="#FAE893"></label>
+              <label>瞳孔の色:<input type="color" id="pupil-pointcolor" value="#F6C2CF"></label>
+              <br>
+              <button id="btn_HL1">ハイライト1</button>
+              <button id="btn_HL2">ハイライト2</button>
+              <button id="btn_HL3">ハイライト3</button>
+              <button id="btn_HL4">ハイライト4</button>
+              <br>
               <button id="btn_EB1">平行眉</button>
               <button id="btn_EB2">困り眉</button>
               <button id="btn_EB3">吊り眉</button>
               <button id="btn_EB4">顰め困り眉</button>
               <button id="btn_EB5">顰め吊り眉</button>
             </div>
-            <div class="tab-contents__item">
+            <div class="tab-contents__item" data-contents="03">
               <label>髪の色:<input type="color" id="hair-color" value="#7E7573"></label>
-            </div>
-            <div class="tab-contents__item">
+              <br>
               <button id="btn_front1">前髪1</button>
               <button id="btn_front2">前髪2</button>
               <button id="btn_front3">前髪3</button>
+              <button id="btn_front4">前髪4</button>
+              <button id="btn_front5">前髪5</button>
             </div>
-            <div class="tab-contents__item">
+            <div class="tab-contents__item" data-contents="04">
               <button id="btn_left1">横髪左1</button>
               <button id="btn_left2">横髪左2</button>
+              <button id="btn_left3">横髪左3</button>
+              <button id="btn_left4">横髪左4</button>
             </div>
-            <div class="tab-contents__item">
+            <div class="tab-contents__item" data-contents="05">
               <button id="btn_right1">横髪右1</button>
               <button id="btn_right2">横髪右2</button>
+              <button id="btn_right3">横髪右3</button>
+              <button id="btn_right4">横髪右4</button>
             </div>
-            <div class="tab-contents__item">
+            <div class="tab-contents__item" data-contents="06">
               <button id="btn_back1">後ろ髪1</button>
               <button id="btn_back2">後ろ髪2</button>
               <button id="btn_back3">後ろ髪3</button>
+              <button id="btn_back4">後ろ髪4</button>
+              <button id="btn_back5">後ろ髪5</button>
+              <button id="btn_back6">後ろ髪6</button>
+              <button id="btn_back7">後ろ髪7</button>
             </div>
           </div>
           <div class="resultShow">

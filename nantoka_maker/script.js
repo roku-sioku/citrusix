@@ -204,13 +204,23 @@ const changeHair = (btn,hair,srcBase,srcLine) => {
 changeHair('btn_front1','front','img/hair_front1_base.png','img/hair_front1_line.png');
 changeHair('btn_front2','front','img/hair_front2_base.png','img/hair_front2_line.png');
 changeHair('btn_front3','front','img/hair_front3_base.png','img/hair_front3_line.png');
+changeHair('btn_front4','front','img/hair_front4_base.png','img/hair_front4_line.png');
+changeHair('btn_front5','front','img/hair_front5_base.png','img/hair_front5_line.png');
 changeHair('btn_left1','left','img/hair_left1_base.png','img/hair_left1_line.png');
 changeHair('btn_left2','left','img/hair_left2_base.png','img/hair_left2_line.png');
+changeHair('btn_left3','left','img/hair_left3_base.png','img/hair_left3_line.png');
+changeHair('btn_left4','left','img/hair_left4_base.png','img/hair_left4_line.png');
 changeHair('btn_right1','right','img/hair_right1_base.png','img/hair_right1_line.png');
 changeHair('btn_right2','right','img/hair_right2_base.png','img/hair_right2_line.png');
+changeHair('btn_right3','right','img/hair_right3_base.png','img/hair_right3_line.png');
+changeHair('btn_right4','right','img/hair_right4_base.png','img/hair_right4_line.png');
 changeHair('btn_back1','back','img/hair_back1_base.png','img/hair_back1_line.png');
 changeHair('btn_back2','back','img/hair_back2_base.png','img/hair_back2_line.png');
 changeHair('btn_back3','back','img/hair_back3_base.png','img/hair_back3_line.png');
+changeHair('btn_back4','back','img/hair_back4_base.png','img/hair_back4_line.png');
+changeHair('btn_back5','back','img/hair_back5_base.png','img/hair_back5_line.png');
+changeHair('btn_back6','back','img/hair_back6_base.png','img/hair_back6_line.png');
+changeHair('btn_back7','back','img/hair_back7_base.png','img/hair_back7_line.png');
 
 // 眉毛切り替え
 const changeEyebrows = (btn,src) => {
@@ -257,9 +267,34 @@ function showResult(){
   })
 // イベントの処理
   function tabSwitch(e){
-    // クリックされた要素のデータ属性を取得
+    // クリックされた要素のデータ属性を取得 データ属性ってdata-○○=""のやつのことか……
     const tabTargetData = e.currentTarget.dataset.tab;
-    console.log(e.currentTarget);
+    console.log(e.currentTarget); 
     console.log(e.currentTarget.dataset.tab);
+    // クリックされた要素の親要素と、その子要素を取得
+    const tabList = e.currentTarget.closest('.tab-list');
+    console.log(tabList);
+    const tabItems = tabList.querySelectorAll('.tab-list__item');
+    console.log(tabItems);
+
+    // クリックされた要素の親要素の兄弟要素の子要素を取得！？！？！？！？！？！？
+    // つまりタブメニューに対してタブコンテンツを全部取得してるってわけか
+    const tabContentsItems = tabList.nextElementSibling.querySelectorAll('.tab-contents__item');
+    console.log(tabContentsItems);
+    // クリックされたtabの同海藻のlistとcontentsのクラスを削除
+    tabItems.forEach((tabItem) => {
+      tabItem.classList.remove('active');
+    })
+    tabContentsItems.forEach((tabContentsItem) => {
+      tabContentsItem.classList.remove('show');
+    })
+    //クリックされたlist要素にactiveクラスを付加
+    e.currentTarget.classList.add('active');
+    // クリックしたlistのデータ属性と等しい値を持つパネルにshowクラスを付加
+    tabContentsItems.forEach((tabContentsItem) => {
+      if(tabContentsItem.dataset.contents === tabTargetData){
+        tabContentsItem.classList.add('show');
+      }
+    })
   }
 }
