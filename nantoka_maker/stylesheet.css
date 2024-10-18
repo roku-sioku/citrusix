@@ -168,6 +168,6 @@
     }
     .resultImage{
         width: 100%;
-        min-height: 50%;
+        min-height: 360px;
     }
 }
