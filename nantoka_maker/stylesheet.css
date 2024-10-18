@@ -168,5 +168,7 @@
     }
     .resultImage{
         width: 100%;
+        max-height: 720px;
+        min-height: 360px;
     }
 }
