@@ -145,12 +145,12 @@
 }
 
 .tab-contents__item.show{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .tab-contents__item > button{
-    display: flex;
-    flex-wrap: wrap;
     width: 64px;
     height: 64px;
     border: #444 solid 1px;
