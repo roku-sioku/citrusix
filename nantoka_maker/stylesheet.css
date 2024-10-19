@@ -148,8 +148,17 @@
     display: block;
 }
 
+.tab-contents__item > button{
+    display: flex;
+    flex-wrap: wrap;
+    width: 64px;
+    height: 64px;
+}
+
 .resultShow > button{
     display: block;
+    width: 100px;
+    height: 50px;
 }
 
 .mask{
