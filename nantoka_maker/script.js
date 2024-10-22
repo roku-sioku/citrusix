@@ -248,7 +248,7 @@ function showResult(){
       if(document.getElementById("result-png")){
         document.getElementById("result-png").src = img_data;
       }else{
-        document.getElementsByClassName(".bg_pattern")[0].appendChild(img_elem);
+        document.getElementByid("result_img_area").appendChild(img_elem);
       }
 
           //表示と同時にダウンロードもさせる場合
