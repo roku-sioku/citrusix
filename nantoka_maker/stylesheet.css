@@ -156,7 +156,7 @@
     display: flex;
 }
 
-.tab-contents__item > button{
+.tab-contents__item  button{
     width: 64px;
     height: 64px;
     border: #444 solid 1px;
