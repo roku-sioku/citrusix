@@ -178,6 +178,10 @@
     border: #444 solid 1px;
 }
 
+#result_img_area{
+    margin: auto;
+}
+
 .mask{
     position:absolute;
     max-width: 720px; min-width: 100%;
