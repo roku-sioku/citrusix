@@ -273,14 +273,11 @@ function showResult(){
     console.log(e.currentTarget.dataset.list);
     // クリックされた要素の親要素と、その子要素を取得
     const tabList = e.currentTarget.closest('.tab-list');
-    console.log(tabList);
     const tabItems = tabList.querySelectorAll('.tab-list__item');
-    console.log(tabItems);
 
     // クリックされた要素の親要素の兄弟要素の子要素を取得！？！？！？！？！？！？
     // つまりタブメニューに対してタブコンテンツを全部取得してるってわけか
     const tabContentsItems = tabList.nextElementSibling.querySelectorAll('.tab-contents__item');
-    console.log(tabContentsItems);
     // クリックされたtabの同海藻のlistとcontentsのクラスを削除
     tabItems.forEach((tabItem) => {
       tabItem.classList.remove('active');
