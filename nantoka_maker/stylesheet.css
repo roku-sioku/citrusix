@@ -9,7 +9,7 @@
     margin: 36px;
     display:flex;
     justify-content: space-evenly;
-    background-color: rgba(255, 253, 240, 0.989);
+    background-color: #fff;
 }
 
 .tab{
@@ -182,7 +182,12 @@
     .contents{
         flex-direction: column;
     }
-    .resultImage, .tab{
+    .resultImage{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .tab{
         width: 100%;
     }
 }
