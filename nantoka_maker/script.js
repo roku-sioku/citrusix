@@ -248,7 +248,7 @@ function showResult(){
       if(document.getElementById("result-png")){
         document.getElementById("result-png").src = img_data;
       }else{
-        document.getElementsByTagName("body")[0].appendChild(img_elem);
+        document.getElementsByClassName(".result-png")[0].appendChild(img_elem);
       }
 
           //表示と同時にダウンロードもさせる場合
