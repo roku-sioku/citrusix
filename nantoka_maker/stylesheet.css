@@ -178,7 +178,7 @@
     border: #444 solid 1px;
 }
 
-#result_img_area{
+#result_img_area > img{
     margin: auto;
 }
 
