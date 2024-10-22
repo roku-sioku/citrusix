@@ -146,10 +146,14 @@
 }
 
 .tab-contents__item.show{
-    display: flex;
+    display: block;
     min-height: 200px;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.tab-contents__item2{
+    display: flex;
 }
 
 .tab-contents__item > button{
