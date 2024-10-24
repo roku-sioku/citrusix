@@ -124,7 +124,7 @@
 
 .tab-list{
     border: #444 solid 1px;
-    border-radius: 16px;
+    border-radius: 112px;
 }
 
 .tab-list > ul{
@@ -135,7 +135,6 @@
 
 .tab-list__item{
     padding: 20px 10px 20px 10px;
-    border: #444 1px solid;
     cursor: pointer;
     transition: all .3s;
 }
