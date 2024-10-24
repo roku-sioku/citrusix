@@ -29,6 +29,7 @@
 
 .resultImage {
     width: 720px;
+    height: 720px;
     position: relative;
 }
 
@@ -178,6 +179,8 @@
 }
 
 #result_img_area > img{
+    width: 720px;
+    display: block;
     margin: auto;
 }
 
@@ -200,6 +203,10 @@
     }
 
     .tab{
+        width: 100%;
+    }
+
+    #result_img_area > img{
         width: 100%;
     }
 }
