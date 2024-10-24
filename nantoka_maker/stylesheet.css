@@ -155,7 +155,6 @@
 
 .tab-contents__item.show{
     display: block;
-    width: 480px;
     min-height: 200px;
 }
 
