@@ -23,7 +23,6 @@
 }
 
 .tab{
-    width: 360px;
     display: flex;
     flex-direction: column;
 }
