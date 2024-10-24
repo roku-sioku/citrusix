@@ -178,7 +178,7 @@
 }
 
 #result_img_area > img{
-    width: 720px;
+    width: 60%;
     display: block;
     margin: auto;
 }
@@ -202,10 +202,6 @@
     }
 
     .tab{
-        width: 100%;
-    }
-
-    #result_img_area > img{
         width: 100%;
     }
 }
