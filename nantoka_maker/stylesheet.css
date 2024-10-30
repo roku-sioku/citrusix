@@ -18,6 +18,10 @@
     height: 120px;
   }
 
+  header > img{
+    height: 120px;
+  }
+
 .contents{
     max-width: 1150px;
     margin: auto;
