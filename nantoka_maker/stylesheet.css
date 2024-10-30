@@ -183,7 +183,7 @@
 }
 
 #result_img_area > img{
-    width: 60%;
+    width: auto;
     display: block;
     margin: auto;
 }
