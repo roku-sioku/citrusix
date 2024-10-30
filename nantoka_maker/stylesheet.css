@@ -183,6 +183,7 @@
     width: 200px;
     height: 50px;
     border: #444 solid 1px;
+    text-align: center;
 }
 
 #result_img_area > img{
