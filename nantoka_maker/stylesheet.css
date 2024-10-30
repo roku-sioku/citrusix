@@ -200,14 +200,11 @@
 
 @media screen and (max-width:820px){
     .logo{
-        width: 100%;
+        height: auto;
     }
 
     .contents{
         flex-direction: column;
-    }
-    .resultImage{
-        height: auto;
     }
 
     .tab{
