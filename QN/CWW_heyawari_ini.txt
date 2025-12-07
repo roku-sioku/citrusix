@@ -15,5 +15,7 @@
   <string>[空き有]</string>
   <string>[空き有]</string>
   <string>[空き有]</string>
+  <string>[空き有]</string>
 </ArrayOfString>
+
 
