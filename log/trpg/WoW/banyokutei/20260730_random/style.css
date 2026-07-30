@@ -1,0 +1,145 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section  {
+  display: block;
+}
+
+ body  {
+  line-height: 1.8;
+  font-size: .875rem;
+  color: #fff;
+  background-color: #fff;
+}
+
+ .p  {
+  word-break: break-word;
+}
+
+ .h1_sub  {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+
+ .background  {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100lvw;
+  height: 100lvh;
+  position: fixed;
+  filter: blur(5px);
+}
+
+ ol, ul  {
+  list-style: none;
+}
+
+ blockquote, q  {
+  quotes: none;
+}
+
+ blockquote:before, blockquote:after, q:before, q:after  {
+  content: "";
+  content: none;
+}
+
+ table  {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ .system  {
+  color: #fff;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, .5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+ .system + .system  {
+  margin-top: -10px;
+}
+
+ .body  {
+  background: rgba(0, 0, 0, .4);
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+ .main  {
+  display: flex;
+  text-align: justify;
+}
+
+ .main:not(:last-child)  {
+  margin-bottom: 15px;
+}
+
+ .ic  {
+  margin-right: 15px;
+  line-height: 0;
+}
+
+ .ic img  {
+  max-width: 60px;
+  height: auto;
+}
+
+ body  {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+ img  {
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+ b  {
+  font-weight: 700;
+}
+
+ .success  {
+  color: #2196f3;
+}
+
+ .fail  {
+  color: #f50057;
+}
+
+ .result  {
+  opacity: 0.6;
+  font-size: 0.85em;
+}
+
+ .name1  {
+  color: rgb(136, 136, 136);
+}
+
+ .name2  {
+  color: rgb(255, 102, 204);
+}
+
+ .name3  {
+  color: rgb(171, 217, 235);
+}
+
+ .name4  {
+  color: rgb(224, 224, 224);
+}
+
+ .name5  {
+  color: rgb(158, 158, 158);
+}
