@@ -1,0 +1,162 @@
+html, body, div, span, p, b, br, img, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --fg: #ffffff;
+  --muted: #9a9a9a;
+  --line: rgba(255, 255, 255, 0.14);
+  --accent: #3f51b5;
+}
+
+body {
+  line-height: 1.8;
+  font-size: 14px;
+  color: var(--fg);
+  background-color: #1a1a1a;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-self: flex-start;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #1a1a1a;
+}
+
+.body {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* 見出しは .body の外にあるので、本文と同じ幅・余白にそろえる */
+h1 {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 15px 0;
+  font-size: 1.5rem;
+}
+
+.main {
+  display: flex;
+  text-align: justify;
+  align-items: flex-start;
+}
+
+.main:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.ic {
+  flex: 0 0 60px;
+  width: 60px;
+  margin-right: 15px;
+  line-height: 0;
+}
+
+.ic img {
+  max-width: 60px;
+  height: auto;
+  align-self: flex-start;
+}
+
+.p {
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.p b {
+  font-weight: 700;
+}
+
+.time {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.system {
+  display: block;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--fg);
+}
+
+.system + .system {
+  margin-top: -10px;
+}
+
+.success {
+  color: #2196f3;
+}
+
+.fail {
+  color: #f50057;
+}
+
+.result {
+  opacity: 0.6;
+  font-size: 0.85em;
+}
+
+.more {
+  margin: 24px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* 発言者の色 */
+
+.name1 {
+  color: #888888;
+}
+
+.name2 {
+  color: #00bcd4;
+}
+
+.name3 {
+  color: #9e9e9e;
+}
+
+.name4 {
+  color: #e91e63;
+}
+
+.name5 {
+  color: #03a9f4;
+}
+
+/* 背景画像（旧ログと同じ .background レイヤー） */
+.background {
+  position: fixed;
+  inset: -10px;
+  z-index: -1;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("background/bg.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  filter: blur(5px) brightness(0.85);
+}
+
